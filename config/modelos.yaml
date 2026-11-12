@@ -1,0 +1,38 @@
+# Mapeamento de Categorias de Modelos para Provedores (Doc 05 §3 e Regra 8)
+# Nenhum nó acessa nomes de modelos ou provedores diretamente no código.
+
+categorias:
+  LLM-R:
+    provedor: "CLI_CODEX"
+    modelo: "gpt-5.6-terra"
+    temperatura: 0.2
+    max_tokens: 4096
+    mock_mode: true
+
+  LLM-V:
+    provedor: "CLI_CODEX"
+    modelo: "gpt-5.6-terra"
+    temperatura: 0.1
+    max_tokens: 4096
+    mock_mode: true
+
+  IMG:
+    provedor: "A_DEFINIR"
+    modelo: "fake-deterministic-img"
+    tamanho: "1920x1080"
+    mock_mode: true
+
+  TTS:
+    provedor: "GEMINI_TTS_FALLBACK"
+    modelo: "gemini-3.8-flash-tts"
+    voz: "Fenrir"
+    api_keys:
+      - "GEMINI_KEY_PRIMARY_PLACEHOLDER"
+      - "GEMINI_KEY_FALLBACK_PLACEHOLDER"
+    mock_mode: true
+
+  ASR:
+    provedor: "A_DEFINIR"
+    modelo: "fake-deterministic-asr"
+    idioma: "pt"
+    mock_mode: true

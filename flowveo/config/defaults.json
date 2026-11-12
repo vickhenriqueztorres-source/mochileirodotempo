@@ -1,0 +1,17 @@
+{
+  "mode": "observe",
+  "releasePhase": "A",
+  "executionEnabled": false,
+  "maxConcurrentJobs": 1,
+  "maxSubmissionsPerRun": 1,
+  "maxRequestedOutputsPerRun": 1,
+  "maxReadRetries": 2,
+  "stopOnUnknownState": true,
+  "allowAutomaticResubmission": false,
+  "allowAccountChanges": false,
+  "allowPurchases": false,
+  "allowDeletion": false,
+  "allowRawTraces": false,
+  "dryRunMutatesPage": false,
+  "runtimeDir": "./runtime"
+}

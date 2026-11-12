@@ -1,0 +1,33 @@
+{
+  "name": "flow-automation",
+  "version": "1.0.0",
+  "description": "Automacao local segura do Google Flow (Fail-Closed + Playwright + SQLite WAL)",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "flow": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --no-warnings ./node_modules/vitest/vitest.mjs run",
+    "test:g1": "node --no-warnings ./node_modules/vitest/vitest.mjs run g1-",
+    "flow": "node --no-warnings --import tsx src/cli/index.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "pino": "^9.5.0",
+    "playwright": "^1.49.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

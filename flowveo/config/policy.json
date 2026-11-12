@@ -1,0 +1,36 @@
+{
+  "policyVersion": "1.0.0",
+  "releasePhase": "A",
+  "allowedWorkOrigins": [
+    "https://labs.google",
+    "https://flow.google",
+    "https://flow.google.com"
+  ],
+  "allowedLoginOrigins": [
+    "https://accounts.google.com",
+    "https://myaccount.google.com"
+  ],
+  "authorizedProjects": [
+    "proj_default_homolog",
+    "560389d6-0558-4e65-8946-e48a2b12b453"
+  ],
+  "authorizedAccounts": [
+    "acct_default_homolog",
+    "matosmayk9@gmail.com",
+    "mayk"
+  ],
+  "limits": {
+    "maxSubmissionsPerRun": 1,
+    "maxSubmissionsPerWindow": 5,
+    "windowDurationMs": 3600000,
+    "maxRequestedOutputsPerRun": 1,
+    "maxActiveJobs": 1,
+    "minFreeDiskBytes": 524288000,
+    "maxDownloadBytesPerSession": 1073741824,
+    "maxSessionDurationMs": 3600000,
+    "maxActionsPerSession": 200,
+    "permitTtlMs": 15000,
+    "maxDownloadRetries": 2,
+    "maxConsecutiveFailures": 3
+  }
+}

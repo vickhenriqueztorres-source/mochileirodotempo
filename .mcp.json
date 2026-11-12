@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "canal_lume": {
+      "command": "python",
+      "args": [
+        "D:\\CANAL 9\\canal_lume_mcp.py"
+      ]
+    }
+  }
+}

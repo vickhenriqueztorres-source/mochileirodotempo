@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0-FLOW-LOCK",
+  "characterId": "mochileiro_do_tempo_v2_raw_human",
+  "characterName": "O Mochileiro do Tempo",
+  "referenceMasterSheet": "D:/CANAL 9/storage_local/personagem_mochileiro_realista/01_character_sheet_forense_3_angulos.jpg",
+  "biometricLock": {
+    "age": 25,
+    "gender": "male",
+    "ethnicity": "Caucasian / European",
+    "faceShape": "oval-rectangular masculine jawline with natural human asymmetry",
+    "eyes": "light blue-grey (#6C8494), medium-deep set, natural catchlights",
+    "eyebrows": "straight, dense, dark brown (#2A211B), positioned close to brow ridge",
+    "facialHair": "neat short brown mustache (#3A2A1D) over upper lip + 1-day light chin/jaw stubble (1mm). NEVER full bushy beard, NEVER clean-shaven without mustache",
+    "skin": "fair skin (#E8C1AA) with natural cold/wind pinkness (#D48C7E) on nose and cheekbones, real pores, zero CGI plastic smoothing",
+    "hair": "short dark-brown wavy hair (#2B221C) tucked under baseball cap"
+  },
+  "wardrobeHexLock": {
+    "cap": "washed dark navy-blue unstructured cotton dad cap (#263340), curved brim, worn forward, ZERO logos or text",
+    "jacket": "matte burnt-terracotta / rust-orange waterproof Gore-Tex hardshell jacket (#9E472A) zipped to chin over matte black fleece inner collar (#1C1E21) with black waterproof chest zippers",
+    "backpackStraps": "dark charcoal-grey padded shoulder straps (#2B2E33) with black plastic sternum buckle fastened across chest and dark blue hydration tube (#224C87) on left strap",
+    "backpackRainCover": "warm mustard-ochre yellow ripstop nylon rain cover (#D99B26) visible peaking behind shoulders and cap",
+    "pantsAndShoes": "matte black cargo trekking pants (#1A1C1E) and beige/taupe dusty Gore-Tex trail shoes (#B5A895)"
+  },
+  "opticsLock": {
+    "camera": "Raw handheld iPhone 15 Pro 0.5x ultra-wide (13mm equivalent) lens",
+    "depthOfField": "deep f/2.2 smartphone DOF (both foreground vlogger face and distant historical background are sharp, NEVER artificial f/1.2 bokeh blur)",
+    "framing": "extended right arm holding camera at 45-degree angle in lower-left frame (Modes A/B) or 3rd-person wide trekking shot (Mode C)"
+  },
+  "voiceLockPtBr": {
+    "language": "pt-BR (Brazilian Portuguese)",
+    "genderAndAge": "25-year-old young adult Brazilian male",
+    "pitchAndTimbre": "medium-baritone, natural casual vlogger voice, realistic environmental acoustics, exact lip-sync"
+  },
+  "mandatoryStartFramePromptPrefix": "Raw authentic iPhone 15 Pro 0.5x ultra-wide photo (16:9, deep f/2.2 DOF, everything in focus). EXACT SAME 25-year-old European male backpacker: blue-grey eyes (#6C8494), straight dark eyebrows, neat short brown mustache (#3A2A1D) with 1-day light chin stubble, natural fair skin with subtle wind pinkness. Wearing washed dark navy-blue cap (#263340) worn forward with NO logo, matte burnt-terracotta Gore-Tex hardshell jacket (#9E472A) zipped over black inner fleece collar, dark charcoal backpack shoulder straps buckled across chest with blue hydration tube, and warm mustard-ochre yellow backpack rain cover (#D99B26) peaking behind his shoulders.",
+  "mandatoryFlowVideoPromptPrefix": "IDENTITY LOCK (100% match to first frame): Preserve exact facial geometry, blue-grey eyes, neat short brown mustache with 1-day stubble, washed dark navy-blue cap (#263340) with no logo, matte burnt-terracotta Gore-Tex jacket (#9E472A), charcoal chest straps, and mustard-ochre yellow backpack cover (#D99B26) without any facial or clothing morphing.",
+  "mandatoryFlowVoicePromptTemplate": "VOICE LOCK (consistent 25-year-old Brazilian male vlogger, medium-baritone pitch, natural casual cadence), speaking in Brazilian Portuguese with exact lip-sync",
+  "timelineDeduplicationPolicy": {
+    "allowRepeatedTakesInMaster": false,
+    "allowColdOpenReuseFromBody": false,
+    "requireUniqueFilePathPerTake": true,
+    "requireUniqueSha256PerTake": true,
+    "minUniqueTakesFor8MinMaster": 62,
+    "ruleDescription": "PROIBIDO repetir qualquer take no mesmo video (incluindo proibido copiar takes do meio do episodio para usar como Cold Open/Hook no inicio). Cada take na timeline e na concat_list.txt deve ter caminho de arquivo e hash SHA-256 100% unicos (1 ocorrencia exata por take)."
+  },
+  "shortsMasterPolicy": {
+    "singleShortPerEpisode": true,
+    "requireFullStoryArcStartToEnd": true,
+    "forbidCenterCropSceneClipping": true,
+    "requireTopTitleHookBanner": true,
+    "strategicBeatCount": 7,
+    "strategicBeatsOrder": [
+      "1_hook_arrival",
+      "2_infiltration",
+      "3_pre_disaster_tension",
+      "4_trigger_point_of_no_return",
+      "5_cataclysm_explosion",
+      "6_visual_climax",
+      "7_escape_and_resolution"
+    ],
+    "ruleDescription": "Gerar exatamente 1 unico Short Master por episodio (55s-58s) que conte a historia completa do inicio ao fim em 7 cortes estrategicos integrais (zero fala ou acao cortada no meio), mantendo 100% da largura da cena 16:9 encaixada em canvas 1080x1920 (proibido crop central que decepa personagem/cenario) e com Banner de Titulo explicativo fixo no topo."
+  }
+}
